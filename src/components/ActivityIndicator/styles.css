@@ -1,0 +1,14 @@
+.activity__screen {
+    background: white;
+    opacity: 0.5;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+}
