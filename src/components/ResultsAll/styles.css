@@ -1,0 +1,56 @@
+.searchPage__result {
+    margin-bottom: 27px;
+    text-align: left;
+}
+
+.searchPage__resultCount {
+    color: #70757a;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.searchPage__results {
+    max-width: 650px;
+    margin-left: 185px;
+    margin-bottom: 100px;
+}
+.searchPage__results a {
+    outline: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.searchPage__results h3,
+.searchPage__results p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.searchPage__resultTitle {
+    text-decoration: none;
+}
+.searchPage__resultTitle:hover {
+    text-decoration: underline;
+}
+.searchPage__resultTitle h3 {
+    font-size: 20px !important;
+    font-weight: normal;
+    line-height: 1.3;
+    color: #1a0dab;
+    margin-top: 4px;
+    margin-bottom: 3px;
+}
+
+.searchPage__resultLink {
+    display: flex;
+    font-weight: normal;
+    color: #3c4043;
+    text-decoration: none;
+    align-items: center;
+}
+
+.searchPage__resultSnippet {
+    line-height: 1.58;
+    word-wrap: break-word;
+    color: #3c4043;
+    font-size: 14px;
+}

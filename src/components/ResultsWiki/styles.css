@@ -1,0 +1,78 @@
+.searchPage__wiki {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    border: 1px solid #dfe1e5;
+    border-radius: 8px;
+    height: max-content;
+    width: 457px;
+    margin-top: 25px;
+    color: #222;
+}
+
+.wiki__images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 165px;
+}
+
+.wiki__images a {
+    outline: 0;
+}
+
+.wiki_image {
+    width: auto;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 8px;
+    padding: 1px;
+    cursor: pointer;
+}
+
+.wiki__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #dfe1e5;
+    z-index: 1;
+    background-color: white;
+}
+
+.wiki__title span {
+    color: rgba(0, 0, 0, 0.87);
+    line-height: 1.2;
+    font-size: 30px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    word-wrap: break-word;
+}
+
+.wiki__share {
+    cursor: pointer;
+}
+
+.wiki__desc {
+    padding: 15px;
+    flex: 1;
+    text-align: left;
+    z-index: 1;
+    background-color: white;
+}
+
+.wiki__desc {
+    font-size: 14px;
+    line-height: 1.58;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wiki__url {
+    outline: 0;
+    text-decoration: none;
+    color: #1a0dab;
+}
+.wiki__url:hover {
+    text-decoration: underline;
+}

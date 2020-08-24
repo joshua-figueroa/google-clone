@@ -8,7 +8,7 @@ export default function ActivityIndicator({ visible = false }) {
 
     return (
         <div className="activity__screen">
-            <Spinner color="#1a0dab" size={50} animating={visible} />
+            <Spinner color="#4285f4" size={50} animating={visible} />
         </div>
     );
 }

@@ -1,11 +1,14 @@
+const trimData = (str) => (str.indexOf("?") !== -1 ? str.split("?")[0] : str);
+
 const breadcrumbs = (link) => {
     const arr = link.split("/");
-    const newArr = [];
+    var newArr = [];
     var str = "";
 
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] !== "" && arr[i] !== "https:" && arr[i] !== "http:") {
-            newArr.push(arr[i]);
+            const data = trimData(arr[i]);
+            if (data !== "") newArr.push(data);
         }
     }
 

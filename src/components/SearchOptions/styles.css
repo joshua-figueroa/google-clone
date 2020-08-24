@@ -1,0 +1,39 @@
+.searchPage__options {
+    display: flex;
+    align-items: center;
+    color: #5f6368;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.searchPage__option a > .MuiSvgIcon-root {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.searchPage__optionsLeft,
+.searchPage__optionsRight {
+    display: flex;
+}
+
+.searchPage__optionsLeft a,
+.searchPage__optionsRight a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #5f6368;
+    outline: 0;
+    font-size: 13px;
+}
+
+.searchPage__optionsLeft {
+    flex: 1;
+}
+
+.searchPage__option {
+    margin-right: 20px;
+}
+
+.searchPage__optionsLeft a > span {
+    margin-left: 5px;
+}
