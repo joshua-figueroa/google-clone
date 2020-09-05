@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 export default function useWiki(term) {
     const [wiki, setWiki] = useState();
     const [wikiURL, setWikiURL] = useState();
-    const [wikiLoading, setWikiLoading] = useState(true);
+    const [wikiLoading, setWikiLoading] = useState();
 
     useEffect(() => {
         (async () => {
@@ -21,6 +21,7 @@ export default function useWiki(term) {
             setWikiURL(url[3][0]);
 
             setWikiLoading(false);
+            console.log(data.query.pages[0].extract);
         })();
     }, [term]);
 

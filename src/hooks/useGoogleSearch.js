@@ -30,8 +30,8 @@ export default function useGoogleSearch(term) {
             setData(response.data);
             if (response.data.items) {
                 response.data.items.forEach((item) => {
-                    if (item.pagemap.cse_thumbnail) imagesArr.push(item.pagemap.cse_thumbnail[0].src);
-                    else if (item.pagemap.cse_image) imagesArr.push(item.pagemap.cse_image[0].src);
+                    if (item.pagemap?.cse_thumbnail) imagesArr.push(item.pagemap.cse_thumbnail[0].src);
+                    else if (item.pagemap?.cse_image) imagesArr.push(item.pagemap.cse_image[0].src);
                 });
             }
             setImages(imagesArr);

@@ -2,7 +2,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
 import React, { useEffect } from "react";
-import { useHistory, Link, Redirect } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 
 import "./styles.css";
 import { SearchBar, SearchOptions, ActivityIndicator, ResultsAll, ResultsWiki } from "../../components";
@@ -35,7 +35,7 @@ export default function Search() {
                 </div>
                 <div className="searchPage__body">
                     <ResultsAll data={data} loading={loading} />
-                    {!loading && <ResultsWiki data={wiki} images={images} url={wikiURL} />}
+                    <ResultsWiki data={wiki} images={images} url={wikiURL} loading={wikiLoading} />
                 </div>
             </div>
         </>

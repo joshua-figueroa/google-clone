@@ -3,7 +3,10 @@ import ShareIcon from "@material-ui/icons/Share";
 
 import "./styles.css";
 
-export default function ResultsWiki({ data, images, url }) {
+export default function ResultsWiki({ data, images, url, loading = true }) {
+    if (loading) return null;
+    if (!loading && !data.extract) return null;
+
     return (
         <div className="searchPage__wiki">
             <div className="wiki__images">
